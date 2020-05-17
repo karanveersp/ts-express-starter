@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.indigo-light_green.min.css"
+    />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header">
+          <div class="mdl-layout-icon"></div>
+      <h2>Welcome to <%= title %></h1>
+
+      </header>
+
+      <main class="mdl-layout__content">
+
+
+      <h3>Here are some engines</h3>
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+        Button
+        </button>
+      <ul>
+        <% template_engines.forEach(engine => { %>
+        <li><%= engine %></li>
+        <% }) %>
+      </ul>
+      </main>
+    </div>
+
+  </body>
+</html>
